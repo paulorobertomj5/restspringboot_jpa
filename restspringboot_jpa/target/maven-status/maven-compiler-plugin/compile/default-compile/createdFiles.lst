@@ -1,0 +1,14 @@
+com/springboot/restspringbootjpa/config/WebConfig.class
+com/springboot/restspringbootjpa/RestSpringBootJpaApplication.class
+com/springboot/restspringbootjpa/config/SwaggerConfig.class
+com/springboot/restspringbootjpa/controller/ClientController.class
+com/springboot/restspringbootjpa/repository/ClientRepository.class
+com/springboot/restspringbootjpa/data/vo/ClientVO.class
+com/springboot/restspringbootjpa/service/ClientService.class
+com/springboot/restspringbootjpa/converter/DozerConverter.class
+com/springboot/restspringbootjpa/converter/YamlJackson2HttpMessageConverter.class
+com/springboot/restspringbootjpa/service/impl/ClientServiceImpl.class
+com/springboot/restspringbootjpa/data/model/Client.class
+com/springboot/restspringbootjpa/exception/ExceptionResponse.class
+com/springboot/restspringbootjpa/exception/ResourceNotFoundException.class
+com/springboot/restspringbootjpa/exception/CustomizedResponseEntityExceptionHandler.class

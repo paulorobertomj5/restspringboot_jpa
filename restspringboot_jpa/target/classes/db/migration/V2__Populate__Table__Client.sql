@@ -1,0 +1,2 @@
+INSERT INTO client (id, first_name, last_name,cpf, birth_date, address, gender) VALUES (1, 'Paulo', 'Roberto','12345678901','2000-04-27', 'Av. Paulista', 'M');
+INSERT INTO client (id, first_name, last_name,cpf, birth_date, address, gender) VALUES (2, 'João', 'José','12345678901', '1995-04-27', 'Av. Brigadeira Faria Lima', 'M');

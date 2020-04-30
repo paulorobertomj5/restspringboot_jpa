@@ -1,0 +1,18 @@
+language: bash
+services: docker
+before_install:
+  - cd restspringboot_jpa/
+  - echo "Entramos no docker folder"
+spript:
+  - docker-compose build
+before_deploy:
+  - echo "${DOCKER_PASSWORD}" | docker login --username "${DOCKER_USERNAME}" --password-stdin
+deploy:
+  provider: script
+  script:
+    docker push paulormoj/restspringboot_jpa;
+    docker push paulormoj/postgres;
+  on:
+    branch: master
+notifications:
+  email: false

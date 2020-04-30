@@ -1,0 +1,14 @@
+/restspringboot_jpa/src/main/java/com/springboot/restspringbootjpa/config/WebConfig.java
+/restspringboot_jpa/src/main/java/com/springboot/restspringbootjpa/exception/ResourceNotFoundException.java
+/restspringboot_jpa/src/main/java/com/springboot/restspringbootjpa/data/vo/ClientVO.java
+/restspringboot_jpa/src/main/java/com/springboot/restspringbootjpa/converter/DozerConverter.java
+/restspringboot_jpa/src/main/java/com/springboot/restspringbootjpa/data/model/Client.java
+/restspringboot_jpa/src/main/java/com/springboot/restspringbootjpa/exception/CustomizedResponseEntityExceptionHandler.java
+/restspringboot_jpa/src/main/java/com/springboot/restspringbootjpa/controller/ClientController.java
+/restspringboot_jpa/src/main/java/com/springboot/restspringbootjpa/RestSpringBootJpaApplication.java
+/restspringboot_jpa/src/main/java/com/springboot/restspringbootjpa/service/ClientService.java
+/restspringboot_jpa/src/main/java/com/springboot/restspringbootjpa/converter/YamlJackson2HttpMessageConverter.java
+/restspringboot_jpa/src/main/java/com/springboot/restspringbootjpa/exception/ExceptionResponse.java
+/restspringboot_jpa/src/main/java/com/springboot/restspringbootjpa/config/SwaggerConfig.java
+/restspringboot_jpa/src/main/java/com/springboot/restspringbootjpa/repository/ClientRepository.java
+/restspringboot_jpa/src/main/java/com/springboot/restspringbootjpa/service/impl/ClientServiceImpl.java

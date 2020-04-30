@@ -1,0 +1,215 @@
+{
+	"info": {
+		"_postman_id": "6aa8a6a5-5fdf-4e09-9e95-52103fc35f47",
+		"name": "client",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllClient",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU4NzY3OTYwOCwiaWF0IjoxNTg3NjQzNjA4fQ.95NFKNclsR0WmAKosocQLH1TaqbYUkaf0wfcJI9VqAI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080//clients/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"",
+						"clients",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getClientById",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU4NzY3OTYwOCwiaWF0IjoxNTg3NjQzNjA4fQ.95NFKNclsR0WmAKosocQLH1TaqbYUkaf0wfcJI9VqAI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080//clients/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"",
+						"clients",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createClient",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU4NzY3OTYwOCwiaWF0IjoxNTg3NjQzNjA4fQ.95NFKNclsR0WmAKosocQLH1TaqbYUkaf0wfcJI9VqAI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"fistName\": \"Maria\",\r\n  \"lastName\": \"silva\",\r\n  \"cpf\": \"12345678912\",\r\n  \"birthDate\": \"2020-04-30\",\r\n  \"address\": \"Av. Faria Lima\",\r\n  \"gender\": \"F\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clients/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clients",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "nome",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateClient",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU4NzY3OTYwOCwiaWF0IjoxNTg3NjQzNjA4fQ.95NFKNclsR0WmAKosocQLH1TaqbYUkaf0wfcJI9VqAI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\":3,\r\n  \"fistName\": \"Maria\",\r\n  \"lastName\": \"silva\",\r\n  \"cpf\": \"12345678912\",\r\n  \"birthDate\": \"2020-04-30\",\r\n  \"address\": \"Av. Luiz Carlos Berrini\",\r\n  \"gender\": \"F\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clients/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clients",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "nome",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteClient",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImV4cCI6MTU4NzY3OTYwOCwiaWF0IjoxNTg3NjQzNjA4fQ.95NFKNclsR0WmAKosocQLH1TaqbYUkaf0wfcJI9VqAI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/clients/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"clients",
+						"3"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "nome",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

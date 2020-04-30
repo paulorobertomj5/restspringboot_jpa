@@ -1,0 +1,5 @@
+/restspringboot_jpa/src/test/java/com/springboot/restspringbootjpa/converter/DozerConverterTest.java
+/restspringboot_jpa/src/test/java/com/springboot/restspringbootjpa/service/ClientServiceTest.java
+/restspringboot_jpa/src/test/java/com/springboot/restspringbootjpa/controller/ClientControllerTest.java
+/restspringboot_jpa/src/test/java/com/springboot/restspringbootjpa/RestSpringBootJpaApplicationTests.java
+/restspringboot_jpa/src/test/java/com/springboot/restspringbootjpa/mocks/MockPerson.java

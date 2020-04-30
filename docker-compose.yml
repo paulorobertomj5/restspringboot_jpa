@@ -1,0 +1,40 @@
+version: '3.4'
+services:
+  db:
+    image: postgres:latest
+    environment:
+         - POSTGRES_USER=postgres
+         - POSTGRES_PASSWORD=admin
+         - POSTGRES_DB=test
+    ports:
+      - 5432:5432
+    volumes:
+      - database-data:/var/lib/postgresql/data/
+    networks:
+      - network
+  rest-spring-boot:
+    image: paulormoj/rest-spring-boot
+    restart: always
+    build: ./restspringboot_jpa
+    working_dir: /restspringboot_jpa
+    environment:
+      TZ: America/Sao_Paulo
+      SPRING_BOOT_ENVIROMENT: Production
+    volumes:
+      - ./restspringboot_jpa:/restspringboot_jpa
+      - ~/.m2:/root/.m2
+    ports:
+      - "8080:8080"
+    command: mvn clean spring-boot:run
+    links:
+      - db
+    depends_on:
+      - db
+    networks:
+      - network
+      
+volumes:
+  database-data:
+networks:
+  network:
+      driver: bridge
